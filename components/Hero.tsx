@@ -20,7 +20,7 @@ const Hero = () => {
       </div>
       <div
         className={cn(
-          "absolute top-0 left-0 w-full h-full",
+          "absolute top-0 left-0 w-full",
           "[background-size:100px_100px]",
           "[background-image:linear-gradient(to_right,rgba(255,255,255,0.1)_1px,transparent_1px),linear-gradient(to_bottom,rgba(255,255,255,0.03)_1px,transparent_1px)]"
         )}
