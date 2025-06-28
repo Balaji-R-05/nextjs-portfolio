@@ -9,7 +9,7 @@ type Certificate = {
   name: string;
   time: string;
   image: string;
-  tags?: string[]; // Optional tags like ['ML', 'Cloud']
+  tags?: string[];
 };
 
 export const HorizontalInfiniteScrollCards = ({
@@ -56,7 +56,7 @@ export const HorizontalInfiniteScrollCards = ({
       ref={scrollRef}
       className={cn(
         'relative z-20 max-w-7xl overflow-x-auto whitespace-nowrap px-4 pb-4',
-        'scrollbar-hide', // hides scrollbar
+        'scrollbar-hide',
         className
       )}
     >
@@ -64,9 +64,9 @@ export const HorizontalInfiniteScrollCards = ({
         {visibleItems.map((item, idx) => (
           <div
             key={idx}
-            className="inline-block w-[320px] sm:w-[380px] shrink-0 rounded-2xl border border-zinc-200 dark:border-zinc-700 bg-white dark:bg-zinc-900 shadow-lg p-4 transition hover:shadow-xl"
+            className="inline-block w-[320px] sm:w-[380px] shrink-0 rounded-2xl border border-zinc-700 bg-zinc-900 shadow-lg p-4 transition hover:shadow-xl"
           >
-            <div className="relative w-full aspect-video mb-4 rounded-lg overflow-hidden border border-zinc-100 dark:border-zinc-800">
+            <div className="relative w-full aspect-video mb-4 rounded-lg overflow-hidden border border-zinc-800">
               <Image
                 src={item.image}
                 alt={item.name}
@@ -76,11 +76,11 @@ export const HorizontalInfiniteScrollCards = ({
             </div>
 
             <div className="flex flex-col gap-1">
-              <h3 className="text-md font-semibold text-gray-800 dark:text-white">
+              <h3 className="text-md font-semibold text-white">
                 {item.name}
               </h3>
               <p className="text-xs text-gray-500">{item.time}</p>
-              <p className="text-sm text-gray-600 dark:text-gray-300 mt-1 whitespace-normal">
+              <p className="text-sm text-gray-300 mt-1 whitespace-normal">
                 {item.desc}
               </p>
 
@@ -89,7 +89,7 @@ export const HorizontalInfiniteScrollCards = ({
                   {item.tags.map((tag, tagIdx) => (
                     <span
                       key={tagIdx}
-                      className="bg-zinc-200/60 text-zinc-800 dark:bg-zinc-700/50 dark:text-zinc-200 text-xs px-2 py-0.5 rounded-full"
+                      className= "bg-zinc-700/50 text-zinc-200 text-xs px-2 py-0.5 rounded-full"
                     >
                       {tag}
                     </span>
@@ -100,7 +100,6 @@ export const HorizontalInfiniteScrollCards = ({
           </div>
         ))}
 
-        {/* Sentinel for infinite scroll */}
         <div ref={loaderRef} className="w-[1px] h-full bg-transparent shrink-0" />
       </div>
     </div>
