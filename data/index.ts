@@ -37,13 +37,12 @@ export const socialMedia = [
 export const gridItems = [
   {
     id: 1,
-    title: "I believe in learning by building and collaborating with others",
+    title: "I'm a student at St. Joseph's Institute of Technology, passionate about AI, Machine Learning, and full-stack development.",
     description: "",
     className: "lg:col-span-3 md:col-span-6 md:row-span-4 lg:min-h-[60vh]",
     imgClassName: "w-full h-full",
     titleClassName: "justify-end",
-    img: "/bg9.jpg",
-    // "/b1.svg",
+    img: "/cover.jpg",
     spareImg: "",
   },
   {
@@ -150,7 +149,7 @@ export const skills = [
     icon: 'icons/nodejs.svg',
     color: '#339933'
   },
-    {
+  {
     name: 'Tailwind CSS',
     icon: 'icons/tail.svg',
     color: '#06B6D4'
@@ -174,6 +173,11 @@ export const skills = [
     name: 'PostgreSQL',
     icon: 'icons/postgresql.svg',
     color: '#4169E1'
+  },
+  {
+    name: 'ChromaDB',
+    icon: 'icons/chroma.svg',
+    color: '#F7F7F7'
   },
   {
     name: 'Git',
@@ -209,7 +213,7 @@ export const skills = [
     name: 'FastAPI',
     icon: 'icons/fastapi.svg',
     color: '#00A86B'
-  },{
+  }, {
     name: 'Streamlit',
     icon: 'icons/streamlit.svg',
     color: '#FF4B4B'
@@ -275,7 +279,7 @@ export const projects = [
     title: "AI Agent Chatbot",
     des: "A multi-model conversational AI chatbot built with powerful tools like Streamlit, LangChain, LangGraph, and FastAPI.",
     img: "/projects/agent-chatbot.png",
-    iconLists: ["./icons/python.svg", "./icons/streamlit.svg", "./icons/fastapi.svg"],
+    iconLists: ["./icons/python.svg", "./icons/streamlit.svg", "./icons/fastapi.svg", "./icons/chroma.svg"],
     link: "https://github.com/Balaji-R-05/ai-agent-chatbot",
   },
   {
@@ -285,7 +289,7 @@ export const projects = [
     img: "/projects/weather.png",
     iconLists: ["/icons/re.svg", "/icons/tail.svg"],
     link: "https://github.com/Balaji-R-05/weather-app-react"
-  },{
+  }, {
     id: 6,
     title: "MERN Auth System",
     des: "Secure user authentication with JWT, email verification, and password reset built using MongoDB, Express, React, and Node.js.",
@@ -300,5 +304,58 @@ export const projects = [
     img: "/projects/portfolio.png",
     iconLists: ["/icons/nextjs.svg", "/icons/tail.svg", "/icons/ts.svg", "/icons/three.svg"],
     link: ""
+  }
+];
+
+export const certificates = [
+  {
+    name: "Introduction to Machine Learning",
+    time: "Jan'25 – Apr'25 NPTEL - IIT Madras",
+    desc: "Covered key ML paradigms with mathematical foundations including supervised, unsupervised, and reinforcement learning. Taught by Prof. Balaraman Ravindran, IIT Madras.",
+    image: '/certificates/nptel-ml.png',
+    tags: ['Statistics', 'ML'],
+  },
+  {
+    name: 'Joy of Computing with Python',
+    time: "Jan'24 – Apr'24 NPTEL - IIT Madras",
+    desc: "A fun-filled introduction to computing through logical thinking, games, puzzles, and real-world examples. Covered Python programming from scratch to sentiment analysis, image processing, and algorithms.",
+    image: '/certificates/nptel-python.png',
+    tags: ['Python', 'Programming'],
+  },
+  {
+    name: '100 Days of Code - Python',
+    time: "Udemy - June'25",
+    desc: "A comprehensive 100-day challenge covering Python fundamentals, data structures, algorithms, and practical projects. Focused on building a strong foundation in Python programming.",
+    image: '/certificates/udemy-python.png',
+    tags: ['Python', 'Web Development', 'Data Structures'],
+  },
+  {
+    name: 'Programming in Java',
+    time: "June'24 - Oct'24 NPTEL - IIT Kharagpur",
+    desc: "An introduction to Java programming covering OOP concepts, data structures, algorithms, and GUI development. Taught by Prof. Sudeshna Sarkar, IIT Kharagpur.",
+    image: '/certificates/nptel-java.png',
+    tags: ['Java', 'Programming', 'OOP'],
+  },
+  {
+    name: "160 Days of DSA",
+    time: "GeeksforGeeks - Jan'25",
+    desc: "A 160-day challenge focused on mastering data structures and algorithms in Python.",
+    image: '/certificates/gfg-dsa.png',
+    tags: ['Python', 'Data Structures', 'Algorithms'],
+  }
+];
+
+export const achievements = [
+  {
+    id: 1,
+    title: "Won 2nd Place in Hackathon",
+    description: "Developed an app to perform offline speech-to-text conversion using Huggingface models",
+    image: "/achievements/simats.jpeg"
+  },
+  {
+    id: 2,
+    title: "Branch Topper",
+    description: "Ranked amongst highest CGPA in my branch for the academic year 2023-2024",
+    image: "/achievements/topper.jpg"
   }
 ];

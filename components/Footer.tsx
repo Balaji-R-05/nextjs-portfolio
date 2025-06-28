@@ -11,7 +11,7 @@ const Footer = () => {
 
   const handleContactClick = () => {
     setShowMessage(true);
-    setTimeout(() => setShowMessage(false), 5000);
+    setTimeout(() => setShowMessage(false), 2000);
   };
 
   return (
@@ -19,7 +19,6 @@ const Footer = () => {
       className="relative w-full pt-20 pb-10 bg-black-100 text-white"
       id="contact"
     >
-      {/* Background grid */}
       <div className="absolute inset-x-0 -bottom-72 min-h-96 z-0">
         <Image
           src="/footer-grid.svg"
@@ -30,7 +29,6 @@ const Footer = () => {
         />
       </div>
 
-      {/* Main content */}
       <div className="relative z-10 flex flex-col items-center text-center px-4">
         <h1 className="heading lg:max-w-[45vw]">
           Ready to take <span className="text-purple">your</span> digital

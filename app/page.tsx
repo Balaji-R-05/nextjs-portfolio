@@ -1,9 +1,13 @@
 import { navItems } from "@/data"
+import Divider from "@/components/Divider";
+
 import { FloatingNav } from "@/components/FloatingNav";
 import Hero from "@/components/Hero";
 import Grid from "@/components/Grid";
 import SkillsSection from "@/components/Skills";
 import RecentProjects from "@/components/RecentProjects";
+import Certificates from '@/components/Certificates'
+import Achievements from "@/components/Achievements";
 import Experiences from "@/components/Experiences";
 import Footer from "@/components/Footer";
 
@@ -15,11 +19,15 @@ export default function Home() {
         <FloatingNav navItems={navItems} />
         <Hero />
         <Grid />
-        <hr className="my-6 border-t border-gray-400 opacity-30" />
+        <Divider />
         <SkillsSection />
-        <hr className="my-6 border-t border-gray-400 opacity-30" />
+        <Divider />
         <RecentProjects />
-        <hr className="my-6 border-t border-gray-400 opacity-30" />
+        <Divider />
+        <Achievements /> 
+        <Divider />
+        <Certificates />
+        <Divider />
         <Experiences />
         <Footer />
       </div>
