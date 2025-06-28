@@ -33,7 +33,7 @@ const Hero = () => {
             AI • Cloud • Full-Stack • Innovation
           </p>
           <TextGenerateEffect
-            words="Building Smart, Human-Centered Tech for the Future"
+            words="Learning to Build Smart, Human-Centered Tech"
             className="text-center text-[40px] md:text-5xl lg:text-6xl"
           />
 

@@ -7,8 +7,6 @@ import RecentProjects from "@/components/RecentProjects";
 import Experiences from "@/components/Experiences";
 import Footer from "@/components/Footer";
 
-// import { TimelineDemo } from "@/components/Timeline";
-
 
 export default function Home() {
   return (
@@ -23,7 +21,6 @@ export default function Home() {
         <RecentProjects />
         <hr className="my-6 border-t border-gray-400 opacity-30" />
         <Experiences />
-        {/* <TimelineDemo /> */}
         <Footer />
       </div>
     </main>
