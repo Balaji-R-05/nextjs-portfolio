@@ -4,41 +4,41 @@ import { skills } from "@/data";
 
 const SkillsSection = () => {
   return (
-    <section className="py-20 px-6 bg-black-100 text-white block" id="skills">
+    <section className="py-16 px-4 sm:px-6 bg-black-100 text-white" id="skills">
       <div className="max-w-6xl mx-auto">
-        <div className="text-center mb-16">
-          <h2 className="text-4xl md:text-5xl font-bold mb-4 bg-gradient-to-r from-white via-gray-300 to-gray-500 bg-clip-text text-purple">
+        <div className="text-center mb-12">
+          <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold mb-4 bg-gradient-to-r from-white via-gray-300 to-gray-500 bg-clip-text text-transparent">
             Technologies & Skills
           </h2>
-          <p className="text-gray-400 text-lg max-w-2xl mx-auto">
+          <p className="text-gray-400 text-base sm:text-lg max-w-xl mx-auto">
             Building modern solutions with cutting-edge technologies
           </p>
         </div>
 
-        <div className="flex flex-wrap justify-center gap-4 mb-8">
+        <div className="flex flex-wrap justify-center gap-3 sm:gap-4 mb-10">
           {skills.map((skill, index) => (
             <div
               key={skill.name}
               className="group relative overflow-hidden skill-item"
               style={{ animationDelay: `${index * 50}ms` }}
             >
-              <div className="flex items-center gap-3 px-6 py-3 bg-gray-900 border border-gray-800 rounded-full hover:border-gray-600 transition-all duration-300 hover:bg-gray-800 hover:scale-105 cursor-pointer">
+              <div className="flex items-center gap-2 sm:gap-3 px-4 sm:px-6 py-2 sm:py-3 bg-gray-900 border border-gray-800 rounded-full hover:border-gray-600 transition-all duration-300 hover:bg-gray-800 active:scale-95 sm:hover:scale-105 cursor-pointer">
                 <div className="w-5 h-5 flex items-center justify-center relative">
                   <Image
                     src={skill.icon}
                     alt={`${skill.name} icon`}
                     width={20}
                     height={20}
-                    className="transition-all duration-300 group-hover:scale-150"
+                    className="transition-all duration-300 group-hover:scale-125"
                   />
                 </div>
-                <span className="text-gray-300 group-hover:text-white transition-colors duration-300 font-medium">
+                <span className="text-gray-300 group-hover:text-white transition-colors duration-300 text-sm sm:text-base font-medium">
                   {skill.name}
                 </span>
               </div>
 
               <div
-                className="absolute inset-0 rounded-full opacity-0 group-hover:opacity-100 transition-opacity duration-300 -z-10 blur-xl"
+                className="absolute inset-0 rounded-full opacity-0 group-hover:opacity-100 transition-opacity duration-300 -z-10 blur-xl pointer-events-none"
                 style={{
                   background: `radial-gradient(circle, ${skill.color}20 0%, transparent 70%)`,
                 }}
@@ -49,7 +49,7 @@ const SkillsSection = () => {
 
         <div className="text-center">
           <div className="inline-flex items-center gap-2 px-4 py-2 bg-gray-900/50 border border-gray-800 rounded-full">
-            <span className="text-gray-400 text-xl">
+            <span className="text-gray-400 text-base sm:text-xl">
               Always learning new technologies 😋
             </span>
           </div>
