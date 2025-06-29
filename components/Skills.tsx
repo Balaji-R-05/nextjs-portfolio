@@ -4,7 +4,7 @@ import { skills } from "@/data";
 
 const SkillsSection = () => {
   return (
-    <section className="py-20 px-6 bg-black-100 text-white hidden sm:block" id="skills">
+    <section className="py-20 px-6 bg-black-100 text-white block" id="skills">
       <div className="max-w-6xl mx-auto">
         <div className="text-center mb-16">
           <h2 className="text-4xl md:text-5xl font-bold mb-4 bg-gradient-to-r from-white via-gray-300 to-gray-500 bg-clip-text text-purple">

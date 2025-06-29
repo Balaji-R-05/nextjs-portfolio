@@ -27,11 +27,11 @@ export const socialMedia = [
     img: "/social/twit.svg",
     link: "https://x.com/r_balaji242005"
   },
-  {
-    id: 5,
-    img: "/social/whatsapp.svg",
-    link: ""
-  }
+  // {
+  //   id: 5,
+  //   img: "/social/whatsapp.svg",
+  //   link: ""
+  // }
 ];
 
 export const gridItems = [

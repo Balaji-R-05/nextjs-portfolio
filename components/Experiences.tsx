@@ -16,7 +16,7 @@ const Experience = () => {
             key={card.id}
             duration={Math.floor(Math.random() * 2000 + 2000)}
             borderRadius="1.75rem"
-            className="flex-1 text-black dark:text-white border-neutral-200 dark:border-slate-800"
+            className="flex-1 text-white border-neutral-200"
           >
             <div className="flex lg:flex-row flex-col lg:items-center p-3 py-6 md:p-5 lg:p-10 gap-2">
               <div className="relative lg:w-32 md:w-20 w-16 h-auto aspect-square">
